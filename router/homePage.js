@@ -8,6 +8,7 @@ const Teacher = require("../models/Teacher");
 const Notice = require("../models/Notice");
 const News = require("../models/News");
 const Gellary = require("../models/Gelllary");
+const Banner = require("../models/Banner");
 
 //Get All
 router.get("/", async (req, res) => {
@@ -17,7 +18,8 @@ router.get("/", async (req, res) => {
     const notice = await Notice.find().limit(2);
     const news = await News.find().limit(4);
     const gellary = await Gellary.find().limit(5);
-    res.status(200).json({ headTeacher, teacher, notice, news, gellary });
+    const banner = await Banner.find();
+    res.status(200).json({ headTeacher, teacher, notice, news, gellary,banner });
   } catch (error) {
     res.status(500).json(error);
   }
