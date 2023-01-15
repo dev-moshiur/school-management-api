@@ -39,6 +39,7 @@ app.use(
     origin: [
       "https://school-management-beta.vercel.app",
       "http://localhost:3000",
+      "http://localhost:3001",
       "https://khalshi-high-school.vercel.app",
     ],
     credentials: true,
