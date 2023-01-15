@@ -36,12 +36,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "https://school-management-beta.vercel.app",
-      "http://localhost:3000",
-      "http://localhost:3001",
-      "https://khalshi-high-school.vercel.app",
-    ],
+    origin: "*",
     credentials: true,
   })
 );
