@@ -36,7 +36,12 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "https://school-management-beta.vercel.app",
+      "https://school-management-beta.netlify.app",
+    ],
     credentials: true,
   })
 );
