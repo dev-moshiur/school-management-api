@@ -6,8 +6,8 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const JWT = require("jsonwebtoken");
 
-const uri =
-  "mongodb+srv://moshiur:(masud422)@cluster0.oacn2vj.mongodb.net/?retryWrites=true&w=majority";
+
+  
 
 const dataGuard = require("./middleweres/dataGuard");
 
@@ -31,6 +31,7 @@ const homePage = require("./router/homePage");
 const upload = require("./middleweres/multer");
 
 dotenv.config();
+const uri =process.env.URI
 const port = process.env.PORT || 8002;
 const app = express();
 
