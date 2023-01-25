@@ -42,6 +42,7 @@ app.use(
       "http://localhost:3001",
       "https://school-management-beta.vercel.app",
       "https://school-management-beta.netlify.app",
+      "https://result-admin.vercel.app",
     ],
     credentials: true,
   })
