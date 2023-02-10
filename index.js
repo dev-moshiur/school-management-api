@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 const JWT = require("jsonwebtoken");
 
 
-  
+
 
 const dataGuard = require("./middleweres/dataGuard");
 
@@ -31,7 +31,7 @@ const homePage = require("./router/homePage");
 const upload = require("./middleweres/multer");
 
 dotenv.config();
-const uri =process.env.URI
+const uri = process.env.URI
 const port = process.env.PORT || 8002;
 const app = express();
 
@@ -43,6 +43,7 @@ app.use(
       "https://school-management-beta.vercel.app",
       "https://school-management-beta.netlify.app",
       "https://result-admin.vercel.app",
+      "http://192.168.0.6:3000/"
     ],
     credentials: true,
   })
