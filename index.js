@@ -43,6 +43,7 @@ app.use(
       "https://school-management-beta.vercel.app",
       "https://school-management-beta.netlify.app",
       "https://result-admin.vercel.app",
+      "https://ksc-result-publisher.vercel.app",
       "http://192.168.0.6:3000"
     ],
     credentials: true,
